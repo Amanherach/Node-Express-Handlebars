@@ -1,0 +1,29 @@
+{
+  "name": "Node-Express-Handlebars",
+  "version": "1.0.0",
+  "description": "A web application that allows users to \"ORDER\", \"DEVOUR\", and \"Re-ORDER\" burgers. Data is persisted in a MySQL database, allowing users to interact with one another's submissions.\r - [Link to Heroku Deployment]()",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achaudhry93/Node-Express-Handlebars.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/achaudhry93/Node-Express-Handlebars/issues"
+  },
+  "homepage": "https://github.com/achaudhry93/Node-Express-Handlebars#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "method-override": "^3.0.0",
+    "mysql": "^2.18.1",
+    "sequelize-heroku": "^2.1.6"
+  },
+  "devDependencies": {}
+}

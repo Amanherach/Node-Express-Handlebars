@@ -1,0 +1,45 @@
+body {
+    width: 99%;
+    height: 900px;
+    background-color: rgb(255, 244, 86) !important;
+}
+.jumbotron {
+    background-image: url("https://i.pinimg.com/originals/46/b7/d5/46b7d56445a1675781ba4bd97fd62a35.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+}
+
+.jumbotron > h1 {
+    font-family: 'Kanit', sans-serif;;
+}
+
+#newburger {
+    border-radius: 5px;
+}
+
+#color-override {
+    color: #fff;
+}
+
+#lefthead {
+    background-color: #5cb85c;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#eatbutton, #trashbutton {
+    float: right;
+}
+
+#righthead {
+    background-color: #fd9a2a;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+#eatbutton {
+    color: rgb(64, 111, 240);
+}

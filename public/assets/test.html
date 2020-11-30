@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="/assets/css/burger_style.css" type="text/css" />
+		<!-- Latest compiled and minified CSS & JS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"></script>
+		<script src="/assets/js/burger.js"></script>
+        <title>Burger App</title>
+        
+        <style type="text/css">
+
+            body {
+                width: 99%;
+                height: 900px;
+                background-color: #fc6 !important;
+            }
+            .jumbotron {
+                background-image: url("https://i.pinimg.com/originals/46/b7/d5/46b7d56445a1675781ba4bd97fd62a35.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                margin-top: 10px;
+            }
+            .jumbotron > h1 {
+                font-family: 'Kanit', sans-serif;;
+            }
+            #newburger {
+                 border-radius: 5px;
+            }
+            #color-override {
+                color: #fff;
+            }
+            #lefthead {
+                background-color: #5cb85c;
+                color: white;
+                text-align: center;
+                font-size: 1.2em;
+            }
+            #eatbutton, #trashbutton {
+                float: right;
+            }
+            #righthead {
+                background-color: #f0ad4e;
+                color: white;
+                text-align: center;
+                font-size: 1.2em;
+            }    
+        </style>
+	</head>
+	<body>
+		<div class="container">
+
+            <div class="jumbotron" >
+                <h1>Eat the Burger</h1>
+                <p>Make burgers, eat burgers.</p>
+                <br>
+                <h2>Make a Burger</h2>
+                <form class="create-form">
+
+                    <div class="form-group">
+                        <label for="newburger">New Burger:</label>
+                        <input type="text" id="newburger" name="burger">
+                    </div>
+                    <button type="submit">Add Burger</button>
+                </form>
+            </div><!-- /jumbotron -->
+
+            <div class="row">
+                <!-- Undevoured Burgers -->
+                <div class="col-lg-6">
+                    <ul>
+                        <!-- {{#each burgers}} -->
+                            <p><span class="label">ID:</span> {{this.id}}</p>
+                            <p><span class="label">Burger:</span> {{this.burger_name}}</p>
+                            <button class="eatburger" data-id="{{this.id}}" data-newDevoured="{{devour}}">Eat the burger</button>
+                        <!-- {{/each}} -->
+                    </ul>
+                </div>
+                <!-- Devoured Burgers -->
+                <div class="col-lg-6">
+
+                </div>
+            </div><!-- /row -->
+
+        </div><!-- /container -->
+	</body>

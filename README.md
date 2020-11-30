@@ -5,7 +5,7 @@ A web application that allows users to "ORDER", "DEVOUR", and "Re-ORDER" burgers
 
 ## Demo 
 
-![Demo](https://github.com/achaudhry93/Node-Express-hHndlebars/blob/master/public/assets/img/burgers.gif)
+![Demo](https://github.com/achaudhry93/Node-Express-Handlebars/blob/master/public/assets/img/burgers.gif)
 
 ## User Story
 ```
